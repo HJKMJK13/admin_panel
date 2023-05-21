@@ -5,6 +5,9 @@
 }
 :root{
     --primary-color:#0E4BF1;
+    --panel-color:white;
+    --text-color:#000;
+    --tran-05:all 0.5s ease;
 }
 
 body{
