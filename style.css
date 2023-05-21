@@ -161,3 +161,7 @@ nav .menu-items{
     background-color:white;
     border-radius: 50%;
 }
+
+body.dark .switch:before{
+    left: 20px;    
+}
