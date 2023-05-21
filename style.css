@@ -56,6 +56,18 @@ nav{
     height: 100%;
     width: 250px;
     background-color:var(--panel-color);
+    border-right: 2px solid var(--border-color);
+    transition: var(--tran-05);
+}
+
+nav.close{
+    width: 73px;
+    
+}
+
+nav.close li a .link-name{
+    opacity: 0;
+    pointer-events: none;
 }
 
 nav .logo-name{
@@ -77,6 +89,11 @@ nav .menu-items{
     display: flex;
     flex-direction: column;
     justify-content:space-between;
+}
+
+nav.close .logo_name{
+    opacity: 0;
+    pointer-events: none;
 }
 
 .menu-items li{
@@ -118,6 +135,7 @@ nav .menu-items{
     font-size: 18px;
     color: gray;
     font-weight:400;
+    transition: var(--tran-05);
 }
 
 .menu-links  li a:hover .link i,
@@ -136,9 +154,21 @@ nav .menu-items{
     cursor: pointer;
 }
 
+.menu-items .longout-mode{
+    padding-top: 10px;
+    border-right: 2px solid var(--border-color);
+
+}
+
+nav.close ~ .dashboard{
+    left: 73px;
+    width: calc(100% - 73px);
+}
+
 .menu-items .mode{
     display: flex;
     align-items: center;
+    white-space: nowrap;
 }
 
 .mode-toggle .switch{
@@ -164,4 +194,32 @@ nav .menu-items{
 
 body.dark .switch:before{
     left: 20px;    
+}
+
+.dashboard{
+    background-color:var(--panel-color);
+    position: relative;
+    left: 250px;
+    height: 100vh;
+    width: calc(100% - 250px);
+    padding: 10px 14px;
+    transition: var(--tran-05);
+}
+
+.dashboard .top{
+    position: fixed;
+    top: 0;
+    left: 250px;
+    display: flex;
+    width: calc(100% - 250px);
+    background-color: var(--panel-color);
+    padding: 10px 14px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dashboard .top .sidebar-toggle{
+    font-size: 26px;
+    color: var(--text-color);
+    cursor: pointer;
 }
