@@ -74,7 +74,18 @@ nav .menu-items{
     height: 100%;
     display: flex;
     align-items: center;
-    color: var(--black-light-color);
+    color: gray;
     justify-content:center;
 
+}
+
+.menu-items li a .link-name{
+    font-size: 18px;
+    color: gray;
+    font-weight:400;
+}
+
+.menu-links  li a:hover .link i,
+.nav-links li a:hover .link-name{
+    color: blue;
 }
