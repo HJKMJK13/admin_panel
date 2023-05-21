@@ -11,8 +11,8 @@
 }
 
 body{
-    min-height: 100vh;
-    background-color:var(--primary-color);
+    height: 100vh;
+    background-color:blue;
     width: 100%;
 }
 
@@ -105,9 +105,12 @@ nav .menu-items{
 .menu-items .mode-toggle{
     height: 50px;
     min-width:45px;
-    background-color: red;
     position: absolute;
     right: 14px;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    cursor: pointer;
 }
 
 .menu-items .mode{
@@ -119,7 +122,19 @@ nav .menu-items{
     position: relative;
     display: inline-block;
     background-color:gray;
+    border-radius: 25px;
     height: 22px;
     width: 40px;
-    background-color: ;
+}
+
+.mode-toggle .switch:before{
+    content: "";
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    left: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color:white;
+    border-radius: 50%;
 }
