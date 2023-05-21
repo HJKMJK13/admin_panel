@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --primary-color:#0E4BF1;
+}
+
+body{
+    min-height: 100vh;
+    background-color:var(--primary-color);
+    width: 100%;
+}
+
+nav .logo-image{
+    min-width: 45px;
+    display: flex;
+    justify-content: center;
+}
+nav .logo-image img{
+    width: 40px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 250px;
+    background-color:var(--panel-color);
+}
+
+nav .logo-name{
+    display: flex;
+    align-items: center;
+}
+
+nav .logo-name .logo_name{
+    font-size: 22px;
+    font-weight: 600;
+    margin-left: 14px;
+    color: var(--text-color);
+}
