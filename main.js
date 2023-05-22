@@ -6,6 +6,7 @@ const body=document.querySelector("body"),
 
 modeToggle.addEventListener("click",()=>{
     body.classList.toggle("dark");
+    if(body.classList.contains("dark"))
 })
 
 sidebarToggle.addEventListener("click",()=>{
