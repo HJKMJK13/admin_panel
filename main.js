@@ -4,11 +4,34 @@ const body=document.querySelector("body"),
      sidebarToggle=body.querySelector(".sidebar-toggle")
 
 
+let getMode=localStorage.getItem("mode");
+if(getMode && getMode==="dark"){
+    body.classList.toggle("dark")
+}
+
+let getStatus=localStorage.getItem("mode");
+if(getStatus && getStatus==="dark"){
+    sidebar.classList.toggle("close");
+
+}
+
 modeToggle.addEventListener("click",()=>{
     body.classList.toggle("dark");
-    if(body.classList.contains("dark"))
+    if(body.classList.contains("dark")){
+        localStorage.setItem("mode","dark")
+    }
+    else{
+        localStorage.setItem("mode","light")
+    }
 })
 
 sidebarToggle.addEventListener("click",()=>{
     sidebar.classList.toggle("close");
+
+    if(sidemar.classList.contains("close")){
+        localStorage.setItem("status","close")
+    }
+    else{
+        localStorage.setItem("status","open")
+    }
 })
