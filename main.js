@@ -8,10 +8,10 @@ if(getMode && getMode==="dark"){
     body.classList.toggle("dark")
 }
 
-let getStatus=localStorage.getItem("mode");
-if(getStatus && getStatus==="dark"){
-    sidebar.classList.toggle("close");
-}
+// let getStatus=localStorage.getItem("mode");
+// if(getStatus && getStatus==="dark"){
+//     sidebar.classList.toggle("close");
+// }
 
 modeToggle.addEventListener("click",()=>{
     body.classList.toggle("dark");
